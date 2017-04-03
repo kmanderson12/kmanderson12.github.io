@@ -15,10 +15,10 @@ $(document).ready(function() {
   
   $(window).scroll(function(){
     if ($(this).scrollTop() > 300) {
-      $("#circle").addClass("visible");
+      $("div.circle").addClass("visible");
     }
     else {
-      $("#circle").removeClass("visible");
+      $("div.circle").removeClass("visible");
     }
   })
 
