@@ -1,4 +1,4 @@
-$("#circle").hide(0);
+$("#circle").hide();
 
 $(document).ready(function() {
   //smooth scroll to target learned from Chris Coyier http://codepen.io/chriscoyier/pen/dpBMVP
