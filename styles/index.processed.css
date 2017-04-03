@@ -8,6 +8,28 @@ body {
   overflow-x: hidden;
 }
 
+#circle {
+  background-color: #0c1b23;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#circle:before {
+  font-family: FontAwesome;
+  content: "\f106";
+  line-height: 1.1;
+  font-size: 2.5rem;
+}
+
 #name {
   max-height: 30px;
   padding-top: 10px;
