@@ -18,10 +18,10 @@ $(document).ready(function() {
   
   $(window).scroll(function(){
     if ($(this).scrollTop() > 300) {
-      $("#circle").fadeIn(1000);
+      $("#circle").removeClass("hidden",1000);
     }
     else {
-      $("#circle").fadeOut(500);
+      $("#circle").addClass("hidden",500);
     }
   })
 
