@@ -8,8 +8,8 @@ body {
   overflow-x: hidden;
 }
 
-.hidden {
-  visibility: hidden;
+.visible {
+  visibility: visible;
 }
 
 #circle {
