@@ -1,0 +1,343 @@
+$dark-blue: rgba(12,27,35,1);
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: rgba(238,238,238,1);
+  font-family: "Montserrat";
+  overflow-x: hidden;
+}
+
+
+
+#name {
+  max-height: 30px;
+  padding-top: 10px;
+  
+}
+
+#nav {
+  position: absolute;
+  background-color: rgba(12,27,35,0.9);
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#links p {
+  font-size: 20px;
+  line-height: 47px;
+  display: inline;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 100;
+  
+}
+
+#links a {
+  text-decoration: none;
+  color: white;
+}
+
+#hero {
+  position: relative;
+  background-image: url("http://i1378.photobucket.com/albums/ah88/kmanderson12/rustic_zps2f69gbx0.jpg");
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  border-radius: 0;
+  color: white;
+  margin-bottom: 0;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#logo {
+  min-height: 200px;
+  max-height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+}
+
+
+
+#about {
+  font-family: "Montserrat";
+  width: 100%;
+   p {
+  font-weight: 200;
+  }
+}
+
+
+
+.bio {
+  margin-top: 5%;
+  text-align: left;
+}
+
+
+
+#btn-ka {
+  display: inline;
+  background-color: white;
+  color: rgba(12,27,35,0.9);
+  border: 2px solid rgba(12,27,35,0.9);
+  border-radius: 2px;
+  padding: 7px;
+  font-weight: 200;
+  width: 50%;
+  margin-top: 20px;
+  height:  50px;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 2;
+  text-decoration: none;
+  &:hover {
+    background-color: rgba(12,27,35,0.9);
+    font-family: "Montserrat";
+    color: white;
+  }
+}
+
+
+
+#face {
+  max-height: 300px;  
+}
+
+#screenshot {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.overlay {
+  position: absolute;
+  font-family: "Montserrat";
+  display: inline;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease-in;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  &:hover {
+    opacity: 1;
+  }
+  
+}
+
+#overlay-btn {
+  display: inline;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 2px;
+  padding: 7px;
+  font-weight: 200;
+  width: 50%;
+  height:  50px;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 2;
+  text-decoration: none;
+  &:hover {
+    background-color: white;
+    font-family: "Montserrat";
+    color: rgba(12,27,35,0.9);
+  }
+}
+
+.overlay-box {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  border: 1px solid white;
+  padding: 30px;
+  background-color: rgba(12,27,35,0.9);
+}
+
+.info {
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  
+}
+
+
+
+#portfolio {
+  height: auto;
+  background-color: rgba(238,238,238,1);
+}
+
+#footer {
+  background-color: rgba(12,27,35,0.9);
+  height: 50px;
+}
+
+#contact {
+  margin: 20px 20px 0 20px;
+  text-decoration: none;
+  &:hover {
+    color: rgba(232,209,105,1);
+  }
+}
+
+.spacer {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/*===================================
+MEDIA QUERIES
+===================================*/
+
+
+
+@media (max-width: 767px) {
+  #hero {
+    height: 90vh;
+    min-height: 300px;
+  }
+  #logo {
+    max-height: 200px;
+  }
+  #links p {
+    font-size: 14px;
+  }
+  #face {
+    max-height: 200px;
+  }
+ 
+  .bio {
+    text-align: center;
+    margin-bottom: 50px;    
+  } 
+  
+  #btn-ka {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px !important;
+    width: 80%;
+  }
+  
+  .info {
+    h3 {
+      font-size:  40px;
+    }
+    p {
+      font-size:  16px;
+    }
+  }
+  
+  #overlay-btn {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  
+  
+  
+}
+
+@media (max-width: 575px) {
+  .bio {
+    
+  }
+  .overlay {
+    h3 {
+      font-size: 12px;
+    }
+    p {
+      font-size: 8px;
+      margin-bottom: 5px;
+    }
+   }
+  
+}
+
+
+
+@media (max-width: 991px) {
+  .overlay {
+    h3 {
+      font-size:  14px;
+    }
+    p {
+      font-size:  10px;
+    }
+    #overlay-btn {
+      font-size: 12px;
+    }
+  }
+  .bio {
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+    #btn-ka {
+      font-size: 12px;
+    }
+  }
+  
+}
+
+@media (min-width: 1199px) {
+  
+  .bio {
+    p {
+      padding-right: 50px;
+    }
+  }
+  
+  .spacer {
+  
+  margin-right: 50px;
+  margin-left: 50px;
+  }
+  
+}
+
+
+
+
