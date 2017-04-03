@@ -8,12 +8,13 @@ body {
   overflow-x: hidden;
 }
 
-#visible {
+.visible {
   visibility: visible;
 }
 
-#circle {
+.circle {
   background-color: rgba(12,27,35,0.7);
+  visibility: hidden;
   color: white;
   height: 50px;
   width: 50px;
