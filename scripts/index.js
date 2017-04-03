@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $("#circle").hide();
+  
   //smooth scroll to target learned from Chris Coyier http://codepen.io/chriscoyier/pen/dpBMVP
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -13,5 +15,14 @@ $(document).ready(function() {
       }
     }
   });
+  
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 500) {
+      $("#circle").fadeIn(500);
+    }
+    else {
+      $("#circle").fadeOut(500);
+    }
+  })
 
 });
