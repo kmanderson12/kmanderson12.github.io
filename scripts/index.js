@@ -1,5 +1,3 @@
-$("#circle").hide();
-
 $(document).ready(function() {
 
   
