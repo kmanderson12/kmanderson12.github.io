@@ -1,5 +1,3 @@
-$("#circle").hide();
-
 $(document).ready(function() {
   //smooth scroll to target learned from Chris Coyier http://codepen.io/chriscoyier/pen/dpBMVP
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -17,10 +15,10 @@ $(document).ready(function() {
   
   $(window).scroll(function(){
     if ($(this).scrollTop() > 300) {
-      $("#circle").fadeIn(1000);
+      $("#circle").addClass("visible");
     }
     else {
-      $("#circle").fadeOut(500);
+      $("#circle").removeClass("visible");
     }
   })
 
