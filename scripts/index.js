@@ -23,7 +23,7 @@ $(document).ready(function() {
     }
     }
     else {
-      $("#circle").fadeOut(500);
+      $("#circle").addClass("hidden",500);
     }
   })
 
