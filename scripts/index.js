@@ -1,7 +1,6 @@
-$(document).ready(function() {
+$("#circle").hide(0);
 
-  
-  
+$(document).ready(function() {
   //smooth scroll to target learned from Chris Coyier http://codepen.io/chriscoyier/pen/dpBMVP
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
