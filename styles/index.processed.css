@@ -287,10 +287,9 @@ MEDIA QUERIES
   }
   #btn-ka {
     display: block;
-    text-align: center;
     margin: 0 auto;
     margin-bottom: 20px !important;
-    width: 80%;
+    
   }
   .info h3 {
     font-size: 40px;
