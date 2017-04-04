@@ -8,18 +8,22 @@ body {
   overflow-x: hidden;
 }
 
+#top-layer {
+    z-index: 1010;
+}
+
 .visible {
   visibility: visible;
 }
 
 .circle {
   background-color: rgba(12,27,35,0.7);
-  visibility: hidden;
   color: white;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   position: fixed;
+    text-align: center;
   top: 80%;
   right: 0;
   transform: translate(-50%, -50%);
@@ -28,8 +32,9 @@ body {
   z-index: 1000;
 }
 
-#circle:before {
+.circle:before {
   font-family: FontAwesome;
+    text-align: center;
   content: "\f106";
   line-height: 1.1;
   font-size: 2.5rem;
@@ -74,6 +79,7 @@ body {
   border-radius: 0;
   color: white;
   margin-bottom: 0;
+  z-index: 1005;
 }
 
 #content {
@@ -159,8 +165,12 @@ body {
   color: white;
 }
 
-.overlay:hover {
+.no-touch .overlay:hover {
   opacity: 1;
+}
+
+.touch {
+    opacity: 1;
 }
 
 #overlay-btn {
@@ -182,7 +192,7 @@ body {
   text-decoration: none;
 }
 
-#overlay-btn:hover {
+.no-touch #overlay-btn:hover {
   background-color: white;
   font-family: "Montserrat";
   color: rgba(12, 27, 35, 0.9);

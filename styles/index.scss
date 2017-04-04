@@ -10,13 +10,17 @@ body {
   overflow-x: hidden;
 }
 
+#top-layer {
+    z-index: 1010;
+}
+
 .visible {
   visibility: visible;
 }
 
 .circle {
   background-color: $dark-blue;
-  visibility: hidden;
+    text-align: center;
   color: white;
   height: 50px;
   width: 50px;
@@ -30,6 +34,7 @@ body {
   z-index: 1000;
   &:before {
     font-family: FontAwesome;
+      text-align: center;
     content: "\f106";
     line-height: 1.1;
     font-size: 2.5rem;
@@ -145,6 +150,7 @@ body {
 
 
 
+
 #face {
   max-height: 300px;  
 }
@@ -170,10 +176,14 @@ body {
   transition: .3s ease-in;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  &:hover {
+  .no-touch &:hover {
     opacity: 1;
   }
   
+}
+
+.touch {
+    opacity: 1;
 }
 
 #overlay-btn {
@@ -193,7 +203,7 @@ body {
   transition: 0.3s;
   line-height: 2;
   text-decoration: none;
-  &:hover {
+  .no-touch &:hover {
     background-color: white;
     font-family: "Montserrat";
     color: rgba(12,27,35,0.9);
@@ -242,7 +252,7 @@ body {
 #contact {
   margin: 20px 20px 0 20px;
   text-decoration: none;
-  &:hover {
+  .no-touch &:hover {
     color: rgba(232,209,105,1);
   }
 }

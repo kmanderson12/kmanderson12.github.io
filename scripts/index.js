@@ -1,6 +1,22 @@
 $(document).ready(function() {
+    $(".circle").hide();
   //smooth scroll to target learned from Chris Coyier http://codepen.io/chriscoyier/pen/dpBMVP
-  $('a[href*="#"]:not([href="#"])').click(function() {
+    smoothScroll();
+    scrollAppear();
+    
+    if (Modernizr.touch) {
+        $("#overlay").click(function(){
+            $(this).toggleClass("touch");
+        })
+    }
+  
+    
+  
+
+});
+
+var smoothScroll = function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -12,14 +28,16 @@ $(document).ready(function() {
       }
     }
   });
-  
-  $(window).scroll(function(){
+    
+}
+
+var scrollAppear = function() {
+    $(window).scroll(function(){
     if ($(this).scrollTop() > 300) {
-      $("div.circle").addClass("visible");
+      $(".circle").fadeIn(1000);
     }
     else {
-      $("div.circle").removeClass("visible");
+      $(".circle").fadeOut(500);
     }
-  })
-
-});
+  });
+}
