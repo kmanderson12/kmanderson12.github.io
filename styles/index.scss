@@ -305,7 +305,7 @@ MEDIA QUERIES
     display: block;
     margin: 0 auto;
     margin-bottom: 20px !important;
-    font-size: 1.25rem;
+      font-size: 1.2rem;
       width: 80%;
   }
   
@@ -319,7 +319,7 @@ MEDIA QUERIES
   }
   
   #overlay-btn {
-    font-size: 18px;
+    font-size: 12px;
     margin-top: 5px;
   }
   
@@ -344,7 +344,7 @@ MEDIA QUERIES
 
 
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .overlay {
     h3 {
       font-size:  14px;
