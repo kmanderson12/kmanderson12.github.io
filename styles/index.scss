@@ -186,6 +186,18 @@ body {
     opacity: 1;
 }
 
+.fill-div {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
+
 #overlay-btn {
   display: inline;
   background-color: transparent;
