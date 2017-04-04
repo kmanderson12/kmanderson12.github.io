@@ -289,6 +289,8 @@ MEDIA QUERIES
     display: block;
     margin: 0 auto;
     margin-bottom: 20px !important;
+      font-size: 1.25rem;
+      width: 80%;
   }
   .info h3 {
     font-size: 40px;
