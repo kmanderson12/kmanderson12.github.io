@@ -257,6 +257,10 @@ body {
   color: #e8d169;
 }
 
+#contact:visited {
+  color: white;
+}
+
 .spacer {
   margin-right: 20px;
   margin-left: 20px;
