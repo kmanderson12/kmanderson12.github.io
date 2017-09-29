@@ -10,6 +10,15 @@ $(document).ready(function() {
         })
     }
 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 300) {
+          $(".overlay").addClass('touch');
+        }
+        else {
+          $(".overlay").removeClass('touch');
+        }
+     }
 
 
 
