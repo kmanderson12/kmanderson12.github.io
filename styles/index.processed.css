@@ -271,6 +271,17 @@ body {
   margin-left: 20px;
 }
 
+.coming-soon {
+  background-color: #C9C9C9;
+  height: 50px;
+  width: 100%;
+}
+
+.twitch {
+  background-color: #674699;
+}
+
+
 
 /*===================================
 MEDIA QUERIES
