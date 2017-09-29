@@ -3,15 +3,15 @@ $(document).ready(function() {
   //smooth scroll to target learned from Chris Coyier http://codepen.io/chriscoyier/pen/dpBMVP
     smoothScroll();
     scrollAppear();
-    
+
     if (Modernizr.touch) {
         $("#overlay").click(function(){
             $(this).toggleClass("touch");
         })
     }
-  
-    
-  
+
+
+
 
 });
 
@@ -28,7 +28,7 @@ var smoothScroll = function() {
       }
     }
   });
-    
+
 }
 
 var scrollAppear = function() {
@@ -41,3 +41,22 @@ var scrollAppear = function() {
     }
   });
 }
+
+const nav = document.querySelector('#nav');
+const topOfNav = nav.offsetTop;
+
+function fixNav() {
+
+  if (window.scrollY >= topOfNav) {
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+    document.body.classList.add('fixed-nav');
+  } else {
+    document.body.style.paddingTop = 0;
+    document.body.classList.remove('fixed-nav');
+  }
+  console.log(topOfNav);
+
+}
+
+
+window.addEventListener('scroll', fixNav);
