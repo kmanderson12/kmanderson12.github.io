@@ -3,25 +3,6 @@ $(document).ready(function() {
   //smooth scroll to target learned from Chris Coyier http://codepen.io/chriscoyier/pen/dpBMVP
     smoothScroll();
     scrollAppear();
-
-    if (Modernizr.touch) {
-        $("#overlay").click(function(){
-            $(this).toggleClass("touch");
-        })
-    }
-
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      $(window).scroll(function(){
-        if ($(this).scrollTop() > 300) {
-          $(".overlay").addClass('touch');
-        }
-        else {
-          $(".overlay").removeClass('touch');
-        }
-     }
-
-
-
 });
 
 var smoothScroll = function() {
